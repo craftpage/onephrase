@@ -1,0 +1,15 @@
+mysql.server start
+
+create database OnePhrase;
+
+create table one_phrase(
+ id integer primary key auto_increment
+, name text
+, date timestamp
+, onephrase text);
+
+insert into one_phrase(
+name
+, onephrase
+) values(
+"yamada", "こんにちは");

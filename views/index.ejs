@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form action="/" method="post">
+        Name: <input type="text" name="name" required>
+        One Phrase: <input type="text" name="onePhrase" required>
+        <button type="submit">Post</button>
+    </form>
+
+
+    <% onePhrase.forEach(function(row){ %>
+      <p>Neme: <%= row.name %>  Date: <%= row.date %></p>
+      <p><%= row.onephrase %></p>
+    <% }); %>
+    <p></p>
+  </body>
+</html>
